@@ -1,0 +1,3 @@
+For git to track this empty directory as part of the repo, a file must exist within.
+Delete this file when the directory begins to populate, at your convenience.
+https://git.wiki.kernel.org/index.php/Git_FAQ#Can_I_add_empty_directories.3F
