@@ -1,0 +1,2 @@
+"E:\Program Files (x86)\GtkRadiant-1.6.4\q3map2_urt.exe" -fs_basepath "E:\Games\FPS\ioUrT4_dev" -fs_game "q3ut4" -game "q3ut4" -meta -v -threads 3 -connect 127.0.0.1:7001 "E:\Games\FPS\ioUrT4_dev\q3ut4\maps\ut4_darkwater.map"
+"E:\Program Files (x86)\GtkRadiant-1.6.4\q3map2_urt.exe" -fs_basepath "E:\Games\FPS\ioUrT4_dev" -fs_game "q3ut4" -game "q3ut4" -light -gamma 1.1 -compensate 1.1 -dirty -dirtmode 1 -dirtscale 4 -dirtgain 1.2 -dark -fast -fastbounce -patchshadows -v -samples 4 -threads 3 -connect 127.0.0.1:7001 "E:\Games\FPS\ioUrT4_dev\q3ut4\maps\ut4_darkwater.map"
