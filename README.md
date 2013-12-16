@@ -17,5 +17,5 @@ While the mapdev repo remains new, there will undoubtedly be several bumps in th
 Instructions to make edits
 =====
 
-It's easy. The browser environment with GitHub is likely the simplest. For a platform-specific application like GitHub for Windows, clone the repo, open a file in something like notepad, save, done. Let's focus on the web version for now.
+It's easy. The browser environment with GitHub is likely the simplest. For a platform-specific application like GitHub for Windows, clone the repo, open a file in something like notepad, save, commit, sync. Let's focus on the web version for now.
 
