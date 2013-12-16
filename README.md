@@ -12,3 +12,10 @@ Content in this repo is for the community, by the community. I you don't know ho
 While the mapdev repo remains new, there will undoubtedly be several bumps in the road, or growing pains. Let's see where this goes. I think such a repo can be very beneficial to all developers and gamers in the UrT community.
 
 -wily
+
+
+Instructions to make edits
+=====
+
+It's easy. The browser environment with GitHub is likely the simplest. For a platform-specific application like GitHub for Windows, clone the repo, open a file in something like notepad, save, done. Let's focus on the web version for now.
+
