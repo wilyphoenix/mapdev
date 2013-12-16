@@ -1,8 +1,8 @@
 # activestate perl for windows
 #!/usr/bin/perl
 
-###############################################################
-## Author:  Dan Barrett a.k.a. wily duck (wilyduck @digitalamusement com)
+###################################################################################################################################
+## Author:  Dan Barrett a.k.a. wily duck (wilyduck@gmail.com)
 ## Date:    6/8/2011 (original)
 ## Program: versioneer.pl
 ## Purpose: Automatically progress or fork a map version.
@@ -33,7 +33,8 @@
 ##             that it copies into a package directory for you to verify, Zip, and rename to .pk3 yourself.
 ##          9. You will need to recompile your .bsp to match resources in your new map.
 ##
-## Version: v1.7 - 12052013.0 - Adding model name output. Still can't copy models (yet).
+## Version: v1.7.1 - 12162013.0 - Uploaded to GitHub. Modifying some documents. Limited line width to no longer than 132 chars.
+##          v1.7 - 12052013.0 - Adding model name output. Still can't copy models (yet).
 ##          v1.6 - 11262013.0 - Changed map1/map2 variables to better describe old_map/new_map. Updated docs.
 ##          v1.5 - 04072013.2 - Added automatic model migration for making your map more stand-alone.
 ##          v1.4 - 04072013.1 - Added packaging logic. No longer need to specify $path with all functions.
@@ -143,8 +144,9 @@ $new_map = "ut4_darkwater";          # and create new_map. Specify same name as 
 
 
 # THIRD: This is optional.
-# We can create the preliminary pk3 package resource dir. You review it, then zip to a pk3. Beats finding all map resources yourself!
-# Models are a different story. At the moment, you can set review_models to see what models to copy. More work to do there.
+# We can create the preliminary pk3 package resource dir. You review it, then zip to a pk3. Beats finding all map resources
+# yourself! Models are a different story. At the moment, you can set review_models to see what models to copy, as well as
+# auto-copy them into a package. Cloning models isn't supported yet.
 
 $package = "yes";
                     # Options: [yes|force|'']       ('' = null, no quotes)
@@ -162,9 +164,10 @@ $packdir = "dev/";
 $dotmap = "create";
                     # Options: [create|move|none]
                     # Standard copy migration behavior of the versioneer migrates your [old_map].map to [new_map].map. However,
-                    # activating $package will inherently copy your .map to the packaging dir. If you don't want to expose your .map
-                    # source file in the package, specify "move" here to store the newly created [new_map].map file in q3ut4/maps/ instead
-                    # of in the packaging dir. Specify "none" if you do not want to create a [new_map].map whatsoever. Not recommended.
+                    # activating $package will inherently copy your .map to the packaging dir. If you don't want to expose your
+                    # .map source file in the package, specify "move" here to store the newly created [new_map].map file in
+                    # q3ut4/maps/ instead of in the packaging dir. Specify "none" if you do not want to create a [new_map].map
+                    # whatsoever. Not recommended.
 
 $review_models = "yes";
                     # Options: [yes|no]
@@ -206,8 +209,10 @@ $clone_models = "no";
 
 
 ## Specify additional actions here. Function definitions are described below.
+## General usage is ([source_dir],[dest_dir]) where your map name is spliced between source and dest.
 
-&copydir("env/","");  # Used for skyboxes.
+
+&copydir("env/","");  # Used for skyboxes. Will copy/create env/yourmap/skybox_up.jpg etc
 
 &copydir("textures/","/editor");  # Radiant editor stuff I use for shader reference.
 
@@ -218,12 +223,17 @@ $clone_models = "no";
 
 
 ###
-### *EXAMPLE* real-world functions/actions used with other maps:
+### /// *EXAMPLE* real-world functions/actions used with other maps. 
+###
+
 # &copydir("levelshots/","");  # Animated levelshot! Has its own dir for levelshot frames.
 # &copydir("textures/ducktextures/","literal");  # Example function that demands resources outside of textures/$new_map/
-# &createfile("scripts/","-ss_b1-models.shader");  # This will rename all $old_map instances, leaving "ut4_ss_b1" shader names alone.
-# &copysame("scripts/shaderlist.txt","add","-ss_b1-models") if $package ne "yes";  # Don't forget to update shaderlist! If not bundling.
-# &copydir("models/mapobjects/","recursive");  # Not the whole mapobjects dir lol! this path gets appended with $new_map during copy.
+# &createfile("scripts/","-ss_b1-models.shader");  # This will rename all $old_map instances, leaving "ut4_ss_b1" shader names
+                                                   # alone.
+# &copysame("scripts/shaderlist.txt","add","-ss_b1-models") if $package ne "yes";  # Don't forget to update shaderlist! If not
+                                                                                   # bundling.
+# &copydir("models/mapobjects/","recursive");  # Not the whole mapobjects dir lol! this path gets appended with $new_map during
+                                               # copy.
 # &copyfile("maps/",".bsp") if $package eq "yes";  # remember to recompile after versioneer'ing to a new map.
 # &copydir("textures/","/raid_drops");  # Subdir with a group of textures.
 # &copydir("textures/","/raid_drops2");
@@ -311,9 +321,9 @@ exit;  # cause it looks better to have an obvious exit.
 
 # That means go away or prepare to wield your sword of +3 Perling!
 
-################################################################################################################################
-# ============================================================================================================================ #
-################################################################################################################################
+###################################################################################################################################
+# =============================================================================================================================== #
+###################################################################################################################################
 
 # From here down is code that you shouldn't mess with, unless you have a reason to.
 # Reasonably commented where code behavior isn't obvious.
@@ -629,7 +639,8 @@ sub copysame {
 
   my @contents = ();
 
-  open (FILE, "$path$file") || (warn ("Couldn't read $path$file\n$!") && return 1);  # We will ONLY copy in and out of q3ut4/, not a packaging path
+  open (FILE, "$path$file") || (warn ("Couldn't read $path$file\n$!") && return 1);  # We will ONLY copy in and out of q3ut4/, not
+                                                                                     #  a packaging path
   while ($line = <FILE>) {
     $line =~ s/\s+$//;  # strip whitespace from end of line
 
