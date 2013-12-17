@@ -12,8 +12,8 @@ Content in this repo is for the community, by the community.
 
 
 
-Instructions to make edits
-=====
+Instructions to make content edits
+----
 
 It's easy. The browser environment with GitHub is likely the simplest. For a platform-specific application like GitHub for Windows, clone the repo, open a file in something like notepad, save, commit, sync. Let's focus on the web version for now.
 
