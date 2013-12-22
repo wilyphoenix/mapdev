@@ -36,9 +36,92 @@ The first time you make a change to a file and try to commit it, the process may
     
 You may be asked for your user and password to connect to the repo. Once this process is complete, you shouldn't have to do this again as the configuration files required are now in place.
 
+## GitHub Markdown formatting
+
 When writing markdown code like this HOWTO.md file, the following links are useful.  
 
 [Markdown format basics](http://daringfireball.net/projects/markdown/basics)  
 [GitHub Markdown, markdown extension](https://help.github.com/articles/github-flavored-markdown)  
 
 
+Git CLI command quick reference for non-GUI users
+----
+
+### Git documentation
+https://www.kernel.org/pub/software/scm/git/docs/git.html
+
+### Getting content
+
+##### Clone a repo into a local subdir
+`git clone [repo_url]`
+
+##### Pull down all changes from assigned repo
+`git pull`
+
+##### Add a new remote for your branch (see git docs)
+`git remote add thisnewbranch <url>`
+
+### Review content
+
+##### Check out what's going on in HEAD (current branch)
+`git status`
+
+### Making changes to the repo
+
+##### Add all new or changed files, and prune old files
+    git add -A
+    git add .|*  # adds but not removes
+    git add -n   # dry run
+
+##### Make a local commit before submitting upstream with a comment
+`git commit -m 'insert a comment about the commit'`
+
+##### Then send changes upstream into branch called thisbranch with tracking reference
+`git push -u origin thisbranch`
+
+### Working with branches
+
+##### switch to branch thisbranch
+`git checkout thisbranch`
+
+##### merge branch changes into master
+    git checkout master
+    git merge thisbranch
+
+##### Sync changes from server thisbranch branch to local
+`git pull origin thisbranch`
+
+### Deleting or removing stuff
+
+##### Remove files from HEAD (current branch)
+`git rm somefile`
+
+##### Clear pending changes to HEAD
+`git reset`
+
+##### delete a branch
+`git branch -d thisbranch      # or -D to dead wipe it without merging`
+`git push origin :thisbranch   # delete branch on github with :`
+
+### Caching changes
+
+##### hold and store a branch change (for "leaving" into another branch)
+    git stash
+    git stash apply   # apply branch changes into current branch, keep stash
+    git stash pop     # ditto, remove stash
+    git stash clear   # just remove stash
+
+### Fix or repair changes
+
+##### reverse the 2 last changes, works n times
+`git push -f origin HEAD^^:master`
+
+##### unfuck a commit to master branch
+    git branch                      # list branches for reference
+    git log                         # find the last correct commit id
+    git branch master-fix           # create a temp fix branch
+    git reset --hard <commit_id>    # rewind to this commit
+    git checkout master-fix         # switch to temp branch
+    git push --force origin master  # push changes up to save rewind
+    git checkout anotherbranch      # resume back to original branch
+    git branch -D master-fix        # delete out the temp fix branch
