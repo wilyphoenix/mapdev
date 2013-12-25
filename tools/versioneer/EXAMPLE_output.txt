@@ -1,0 +1,59 @@
+
+Initial checks complete, ready to begin.
+
+The versioneer will copy ut4_darkwater to ut4_darkwater2_a1 and models found will be listed upon conclusion of the versioneer.
+
+Ready! Press enter to begin! (or control-C to abort)
+
+
+cmd> echo "The Versioneer"
+
+op> createfile scripts/ut4_darkwater2_a1.shader ...
+
+op> createfile scripts/ut4_darkwater2_a1.arena ...
+
+op> copysame ut4_darkwater2_a1 add ...
+Info: Creating backup version of scripts/shaderlist.txt first ...
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\scripts\shaderlist.txt" "e:\games\fps\ioUrT4_dev\q3ut4\scripts\shaderlist.txt.old"
+Info: e:/games/fps/ioUrT4_dev/q3ut4/scripts/shaderlist.txt updated ...
+
+op> copyfile levelshots/ut4_darkwater2_a1.tga ...
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\levelshots\ut4_darkwater.tga" "e:\games\fps\ioUrT4_dev\q3ut4\levelshots\ut4_darkwater2_a1.tga"
+
+op> copydir sound/ut4_darkwater2_a1 ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater2_a1"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater\*" "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater2_a1\*"
+
+op> copydir textures/ut4_darkwater2_a1 ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater2_a1"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater\*" "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater2_a1\*"
+
+op> copyfile maps/ut4_darkwater2_a1.tga ...
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\maps\ut4_darkwater.tga" "e:\games\fps\ioUrT4_dev\q3ut4\maps\ut4_darkwater2_a1.tga"
+
+op> Creating ut4_darkwater2_a1.map ...
+
+op> createfile maps/ut4_darkwater2_a1.map ...
+
+
+Info: Primary functions complete. Additional functions next.
+
+op> copydir env/ut4_darkwater2_a1 ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\env\ut4_darkwater2_a1"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\env\ut4_darkwater\*" "e:\games\fps\ioUrT4_dev\q3ut4\env\ut4_darkwater2_a1\*"
+
+op> copydir textures/ut4_darkwater2_a1/editor ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater2_a1\editor"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater\editor\*" "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_darkwater2_a1\editor\*"
+
+op> copydir recursive sound/ut4_darkwater2_a1 ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater2_a1"
+A subdirectory or file e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater2_a1 already exists.
+cmd> xcopy /E /Y "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater" "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_darkwater2_a1"
+
+List of models found:
+models/mapobjects/br_ship
+
+Complete. The versioneer aims to please. Press any key to continue.
+
+
