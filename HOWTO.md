@@ -52,6 +52,7 @@ Type the following commands to declare who you are:
 
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
+    git config --global push.default simple
 
 Copy all mapdev repo files to your computer:
 
