@@ -48,11 +48,16 @@ You'll first need a git package, which will have specific requirements for your 
 
 ### CLI commands
 
-Type the following commands to copy all repo files locally:
+Type the following commands to declare who you are:
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+
+Copy all mapdev repo files to your computer:
 
     git clone https://github.com/wilyphoenix/mapdev/
 
-Sync your local repo (download) by:
+Sync your local repo (download) any time changes to the repo happen:
 
     cd mapdev/
     git fetch --all
