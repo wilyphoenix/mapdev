@@ -3,6 +3,8 @@ A quick guide on git
 
 If you don't know how to use 'git', we'll get you started plenty quick. Less hacking, more doing! And more fun.
 
+### GUI based - Windows
+
 Open these [installation instructions](https://help.github.com/articles/set-up-git) in another tab. Click the ```Not sure what to pick on each screen``` button. Now you have a visual.
 
 First, [download git](http://git-scm.com/download/win) and begin the installation.
@@ -20,20 +22,48 @@ Once installed, click ```tools``` -> ```options```.
 
 Drag the url link for [mapdev](https://github.com/wilyphoenix/mapdev) into the resulting application window. The mapdev repo will populate into the folder destination you set above.
 
+#### Making changes or adding or deleting content
+
 Git has many checks and balances for multi-user edits (commits) and thus there's a process to updating files.
 
-The simple end of it: make modifications in windows explorer in the *destination folder*, then in GitHub for Windows, write a commit message indicating what you did, then commit, then sync. Kind of like a paranoid version of Dropbox.
+The simple end of it: First you'll make modifications to files from Windows Explorer in the *destination folder* via some editor. Once your changes are complete, go to your GitHub for Windows app, *write a commit message* indicating what you did, click commit, click sync, done! It's kind of like a paranoid version of Dropbox.
+
+Best practices for maintaining files and folder structures will be in a different section.
+
+#### Branches
 
 Branches are really cool. A branch soft clones all files in the repo. Like having a shadow repo. You can select another branch, which causes all local files in your repo to either be created or deleted or changed to match the selected branch. Select the previous branch to put everything the way it was. Make a new branch to have your own variation on the repo's content, without affecting the main content.
 
 Try selecting a different branch by clicking the ```master``` button with a fork-looking symbol at the top. If you watch your files in explorer while selecting a different branch, you may notice files changing! This is how branches work. All files are safe in their respective branch.
 
-The first time you make a change to a file and try to commit it, the process may fail (sigh..) but if so, in GitHub for Windows, click the gear in the upper-right corner. Select ```open a shell here```. Type the following on the command line.
+### Manual CLI interaction (Windows)
 
+To acquire the repo instantly without a GUI, find a suitable local folder that mapdev/ can be cloned (or copied) into. Right click that folder, select ```git bash here```. Skip down a section to ```CLI commands```.
+
+If during your first commit in GitHub for Windows the process fails, using the gear button in the upper-righthand corner, open a bash shell, then run the ```CLI commands``` to sync the local repo.
+
+### Manual CLI interaction (Unix)
+
+You'll first need a git package, which will have specific requirements for your system. This goes for the many flavors of Linux, FreeBSD, or Solaris. Once git is installed, the process is uniform.
+
+### CLI commands
+
+Type the following commands to copy all repo files locally:
+
+    git clone https://github.com/wilyphoenix/mapdev/
+
+Sync your local repo (download) by:
+
+    cd mapdev/
     git fetch --all
     git pull https://github.com/wilyphoenix/mapdev
+
+Sync ALL changes you made to files (upload) by:
+
+    git add -A
+    git commit -m 'insert a comment about the commit'
     git push --set-upstream origin master
-    
+
 You may be asked for your user and password to connect to the repo. Once this process is complete, you shouldn't have to do this again as the configuration files required are now in place.
 
 ## GitHub Markdown formatting
