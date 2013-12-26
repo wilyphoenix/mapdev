@@ -1,6 +1,8 @@
 # activestate perl for windows
 #!/usr/bin/perl
 
+# UrT 4.2
+
 ###################################################################################################################################
 ## Author:  Dan Barrett a.k.a. wily duck (wilyduck@gmail.com)
 ## Date:    6/8/2011 (original)
@@ -134,13 +136,13 @@
 
 
 # FIRST: Where is your Urban Terror exe?
-$path = "e:/games/fps/ioUrT4_dev";  # suffix slash / not necessary. we'll fix it if you demand to append it
-$urtexe = "ioUrbanTerror.exe";      # name of the UrT exe file to make sure $path is specified correctly
-$q3ut4 = "q3ut4";                   # resources dir of the game
+$path = "E:\Games\FPS\UrbanTerror42_dev";	# suffix slash / not necessary. we'll fix it if you demand to append it
+$urtexe = "Quake3-UrT.exe";      		# name of the UrT exe file to make sure $path is specified correctly
+$q3ut4 = "q3ut4";                   		# game assets and resources folder
 
 # SECOND: Specify your old and new map:
-$old_map = "ut4_darkwater";          # Copy from old_map...
-$new_map = "ut4_darkwater";          # and create new_map. Specify same name as old_map when packaging.
+$old_map = "ut4_vanilla";		# Copy from old_map...
+$new_map = "ut4_mapdevwarehouse";	# and create new_map. Specify same name as old_map when packaging.
 
 
 # THIRD: This is optional.
@@ -148,7 +150,7 @@ $new_map = "ut4_darkwater";          # and create new_map. Specify same name as 
 # yourself! Models are a different story. At the moment, you can set review_models to see what models to copy, as well as
 # auto-copy them into a package. Cloning models isn't supported yet.
 
-$package = "yes";
+$package = "no";
                     # Options: [yes|force|'']       ('' = null, no quotes)
                     # Specify "yes" if you want to create $new_map resources in q3ut4/$packdir/$new_map/ for package bundling.
                     # We'll copy all map resources to the $packdir dir rather than the standard q3ut4 dir.
