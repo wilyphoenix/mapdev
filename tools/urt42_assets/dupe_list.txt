@@ -1,0 +1,46 @@
+
+Duplicate files moved by Winrar when decompressing the entirety of 4.2.17 zpaks.
+
+That's 240MB of extra junk, much of which likely is purged by the system of last-modified-first-used.
+
+
+ Directory of Y:\temp\UrT\dupes
+
+[.]                          [..]                         animation(1).cfg             arms_damage_5(1).tga         arms_damage_5(2).tga         arms_tag_w(1).tga
+arms_white_w(1).tga          barrel(1).jpg                base(1).jpg                  blood203(1).tga              blood204(1).tga              bomber(1).tga
+b_flag(1).md3                cavalry(1).shader            CTFflags(1).shader           decal(1).shader              decal_dirt(1).tga            decal_dirt10(1).tga
+decal_dirt11(1).tga          decal_dirt12(1).tga          decal_dirt2(1).tga           decal_dirt2_dark(1).tga      decal_dirt3(1).tga           decal_dirt3_dark(1).tga
+decal_dirt4(1).tga           decal_dirt5(1).tga           decal_dirt6(1).tga           decal_dirt7(1).tga           decal_dirt8(1).tga           decal_dirt9(1).tga
+decal_ground(1).tga          decal_ground2(1).tga         default(1).cfg               defuser(1).tga               flboom_2(1).jpg              flboom_3(1).jpg
+foliage(1).shader            g36_hold(1).md3              gameinfo(1).txt              glboom_2(1).jpg              glboom_3(1).jpg              hand_free(1).skin
+hand_jump(1).skin            hand_swat(1).skin            hand_tag(1).skin             head_free_b_(1).skin         head_free_b_(2).skin         head_free_w_(1).skin
+head_free_w_(2).skin         head_jump_b_(1).skin         head_jump_b_(2).skin         head_jump_w_(1).skin         head_jump_w_(2).skin         head_tag_b_(1).skin
+head_tag_b_(2).skin          head_tag_w_(1).skin          helmet_blue_camo(1).tga      helmet_blue_leader(1).skin   helmet_blue_leader(2).skin   helmet_free_b(1).skin
+helmet_free_b(2).skin        helmet_free_w(1).skin        helmet_free_w(2).skin        helmet_jump_b(1).skin        helmet_jump_b(2).skin        helmet_jump_w(1).skin
+helmet_jump_w(2).skin        helmet_red_leader(1).skin    helmet_red_leader(2).skin    helmet_swat_b(1).skin        helmet_swat_b(2).skin        helmet_tag_b(1).skin
+helmet_tag_b(2).skin         helmet_tag_w(1).skin         helmet_tag_w(2).skin         kingdom4(1).shader           lower_free_b(1).skin         lower_free_b(2).skin
+lower_free_w(1).skin         lower_free_w(2).skin         lower_jump_b(1).skin         lower_jump_b(2).skin         lower_jump_w(1).skin         lower_jump_w(2).skin
+lower_swat_b(1).tga          lower_swat_b(2).tga          lower_tag_b(1).skin          lower_tag_b(2).skin          lower_tag_w(1).skin          lower_tag_w(1).tga
+lower_tag_w(2).skin          lower_white_b(1).tga         lower_white_w(1).tga         medic1(1).tga                mirror1(1).tga               multiplant(1).shader
+nateleaf(1).shader           nvg_free_b(1).skin           nvg_free_b(2).skin           nvg_free_w(1).skin           nvg_free_w(2).skin           nvg_jump_b(1).skin
+nvg_jump_b(2).skin           nvg_jump_w(1).skin           nvg_jump_w(2).skin           n_flag(1).md3                plasmaboom(1).jpg            plaster_peach_512(1).tga
+rlboom_2(1).jpg              rlboom_3(1).jpg              rlboom_4(1).jpg              rlboom_5(1).jpg              rlboom_6(1).jpg              rlboom_7(1).jpg
+rlboom_8(1).jpg              r_flag(1).md3                sound(1).cfg                 spas12(1).MD3                spas12(1).tga                spas12(2).tga
+spas12_2(1).MD3              spas12_hold(1).MD3           spas12_view_ejector(1).MD3   spas12_view_main(1).MD3      spas12_view_slide(1).MD3     sr8(1).md3
+sr8_2(1).md3                 sr8_hold(1).md3              sr8_view_bolt(1).md3         sr8_view_capbk(1).md3        sr8_view_capfr(1).md3        sr8_view_clip(1).md3
+sr8_view_ejector(1).md3      sr8_view_main(1).md3         sr8_view_mode(1).md3         sr8_view_trigger(1).md3      turnpike(1).shader           upper_damage_5(1).tga
+upper_damage_5(2).tga        upper_free_b(1).skin         upper_free_b(2).skin         upper_free_w(1).skin         upper_free_w(2).skin         upper_jump_b(1).skin
+upper_jump_b(2).skin         upper_jump_w(1).skin         upper_jump_w(2).skin         upper_swat_b(1).tga          upper_swat_w(1).tga          upper_tag_b(1).skin
+upper_tag_b(1).tga           upper_tag_b(2).skin          upper_tag_w(1).skin          upper_tag_w(1).tga           upper_tag_w(2).skin          upper_white_w(1).tga
+ut4_casa(1).aas              ut4_casa(1).bsp              ut4_casa(1).rad              ut4_kingdom(1).bsp           ut4_kingdom(1).tga           ut4_kingdom(1).txt
+ut4_prague_v2(1).aas         ut4_prague_v2(1).bsp         ut4_prague_v2(1).rad         ut4_prague_v2(1).rtf         ut4_raiders(1).bsp           ut4_raiders(1).tga
+ut4_raiders(1).txt           ut4_ramelle(1).aas           ut4_ramelle(1).bsp           ut4_ramelle(1).rad           ut4_ramelle(1).tga           ut4_turnpike(1).aas
+ut4_turnpike(1).bsp          ut4_turnpike(1).rad          ut4_uptown(1).aas            ut4_uptown(1).bsp            ut4_uptown(1).rad            utfx(1).shader
+ut_prague(1).shader          vest_damage_5(1).tga         vest_damage_5(2).tga         vest_free_b(1).skin          vest_free_b(1).tga           vest_free_b(2).skin
+vest_free_b(2).tga           vest_free_w(1).skin          vest_free_w(1).tga           vest_free_w(2).skin          vest_free_w(2).tga           vest_jump_b(1).skin
+vest_jump_b(2).skin          vest_jump_w(1).skin          vest_jump_w(2).skin          vest_swat_b(1).skin          vest_swat_w(1).tga           vest_swat_w(2).tga
+vest_tag_b(1).skin           vest_tag_b(1).tga            vest_tag_b(2).skin           vest_tag_w(1).skin           vest_tag_w(1).tga            vest_tag_w(2).skin
+vest_white_w(1).tga
+
+             203 File(s)    239,792,272 bytes
+
