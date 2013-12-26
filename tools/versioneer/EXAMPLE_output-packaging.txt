@@ -1,0 +1,65 @@
+Initial checks complete, ready to begin.
+
+The versioneer will copy ut4_vanilla to ut4_vanilla as a
+package bundle in q3ut4/dev/ut4_vanilla/ and models found will be listed upon co
+nclusion of the versioneer with models copied to the package bundle.
+
+Ready! Press enter to begin! (or control-C to abort)
+
+
+cmd> echo "The Versioneer"
+
+op> Creating package bundle directory e:/games/fps/ioUrT4_dev/q3ut4/dev/ut4_vanilla/ ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla"
+
+op> createfile scripts/ut4_vanilla.shader ...
+
+op> Directory e:/games/fps/ioUrT4_dev/q3ut4/dev/ut4_vanilla/scripts/ needs to be created ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\scripts"
+
+op> createfile scripts/ut4_vanilla.arena ...
+
+op> copyfile levelshots/ut4_vanilla.tga ...
+ ** SKIPPING ** copying because the source file doesn't exist:
+e:/games/fps/ioUrT4_dev/q3ut4/levelshots/ut4_vanilla.tga
+
+op> copydir sound/ut4_vanilla ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\sound\ut4_vanilla"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_vanilla\*" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\sound\ut4_vanilla\*"
+
+op> copydir textures/ut4_vanilla ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\textures\ut4_vanilla"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_vanilla\*" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\textures\ut4_vanilla\*"
+
+op> copyfile maps/ut4_vanilla.tga ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\maps"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\maps\ut4_vanilla.tga" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\maps\ut4_vanilla.tga"
+
+op> Creating ut4_vanilla.map ...
+
+op> createfile maps/ut4_vanilla.map ...
+
+op> copyfile maps/ut4_vanilla.bsp ...
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\maps\ut4_vanilla.bsp" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\maps\ut4_vanilla.bsp"
+
+
+Info: Primary functions complete. Additional functions next.
+
+op> copydir env/ut4_vanilla ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\env\ut4_vanilla"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\env\ut4_vanilla\*" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\env\ut4_vanilla\*"
+
+op> copydir textures/ut4_vanilla/editor ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\textures\ut4_vanilla\editor"
+cmd> copy "e:\games\fps\ioUrT4_dev\q3ut4\textures\ut4_vanilla\editor\*" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\textures\ut4_vanilla\editor\*"
+
+op> copydir recursive sound/ut4_vanilla ...
+cmd> mkdir "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\sound\ut4_vanilla"
+A subdirectory or file e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\sound\ut4_vanilla already exists.
+cmd> xcopy /E /Y "e:\games\fps\ioUrT4_dev\q3ut4\sound\ut4_vanilla" "e:\games\fps\ioUrT4_dev\q3ut4\dev\ut4_vanilla\sound\ut4_vanilla"
+File not found - ut4_vanilla
+
+List of models found:
+No external shared models to copy.
+
+Complete. The versioneer aims to please. Press any key to continue.
