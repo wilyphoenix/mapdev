@@ -35,7 +35,8 @@
 ##             that it copies into a package directory for you to verify, Zip, and rename to .pk3 yourself.
 ##          9. You will need to recompile your .bsp to match resources in your new map.
 ##
-## Version: v1.7.1 - 12162013.0 - Uploaded to GitHub. Modifying some documents. Limited line width to no longer than 132 chars.
+## Version: v1.8 - 12262013.0 - Changed strings for 4.2. Updated some error checking for paths.
+##          v1.7.1 - 12162013.0 - Uploaded to GitHub. Modifying some documents. Limited line width to no longer than 132 chars.
 ##          v1.7 - 12052013.0 - Adding model name output. Still can't copy models (yet).
 ##          v1.6 - 11262013.0 - Changed map1/map2 variables to better describe old_map/new_map. Updated docs.
 ##          v1.5 - 04072013.2 - Added automatic model migration for making your map more stand-alone.
@@ -131,14 +132,14 @@
 
 
 ### ===================================================================== ###
-### IMPORTANT!!!!! Use / forward slashes in all cases, not \ backslashes! ###
+### IMPORTANT!!!!! Use / forward slashes in all cases, not \ backslashes! ###  <-- really important
 ### ===================================================================== ###
 
 
 # FIRST: Where is your Urban Terror exe?
-$path = "E:\Games\FPS\UrbanTerror42_dev";	# suffix slash / not necessary. we'll fix it if you demand to append it
+$path =   "E:/Games/FPS/UrbanTerror42_dev";	# suffix slash / not necessary. we'll fix it if you demand to append it
 $urtexe = "Quake3-UrT.exe";      		# name of the UrT exe file to make sure $path is specified correctly
-$q3ut4 = "q3ut4";                   		# game assets and resources folder
+$q3ut4 =  "q3ut4";                   		# game assets and resources folder
 
 # SECOND: Specify your old and new map:
 $old_map = "ut4_vanilla";		# Copy from old_map...
@@ -344,7 +345,14 @@ exit;  # cause it looks better to have an obvious exit.
 
 sub startup {
 
-  die "Your path doesn't seem right. Can't find $urtexe" if ! -e "$path/$urtexe";
+  if (! -e "$path/$urtexe") {
+    print "Your path doesn't seem right. Can't find UrT executable said to exist here:\n$path/$urtexe\n\n";
+    print "Make sure you haven\'t put backslashes \'\\\' in your path. You MUST use regular forward slashes! \'\/\'\n\n";
+    print "Press a key to exit (and fix the config)...\n";
+
+    <STDIN>;
+    exit;
+  }
 
   $path .= "/" if $path !~ /\/$/;  # Add a / suffix if none specified
   $path .= "$q3ut4/";
