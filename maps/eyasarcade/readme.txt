@@ -33,7 +33,7 @@ Sounds			: Both traffic and asteroids (arcade) came from Freesound.org and were 
 Models			: All my own work
 Skybox			: Skybox, created by me using 3dsmax
 Bumpy               	: Not bothered, nobody put the renderer into 4.2
-
+Download		: http://www.custommapmakers/storage/maps/q3ut4/ut4_eyasarcade.pk3
 * Play Information *
 
 Bot Support		: Full bot support.
