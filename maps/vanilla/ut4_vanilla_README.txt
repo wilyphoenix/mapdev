@@ -47,6 +47,14 @@ Authors note: Add a personal note.
 
 Vanilla UrT Map is a base template for other maps. There's not much to it.
 
+It's a developers' map built specifically for mapdev. Contains blocks that demonstrate various
+sizes. Lighting/shadows are tested using different compile options, with one check block group
+as a func_group entity, and the other is composed of individual brushes.
+
+All mapdev developers are welcome to mod/play/edit/etc this map. Please keep in mind this is
+not a gameplay enabled map, though you're welcome to fork the map into whatever you please.
+
+The skybox is specially designed to show texture orientation when aligning skybox textures.
 
 
 --------------------------------------------------------------------------------
