@@ -1,0 +1,5 @@
+{
+map		"ut4_outback"
+longname 	"Outback in Australia"
+type		"ut_ffa ut_team ut_ctf"
+}

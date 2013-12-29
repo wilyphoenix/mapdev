@@ -1,0 +1,5 @@
+{
+map		"ut4_evil_mini_circus"
+longname 	"Evil (mini) Circus"
+type		"ut_ffa ut_team ut_ctf"
+}

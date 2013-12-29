@@ -1,0 +1,5 @@
+{
+map		"ut4_eyasarcade"
+longname 	"Eyas' Arcade"
+type		"ut_ffa ut_team ut_ctf"
+}
