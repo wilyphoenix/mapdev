@@ -1,6 +1,6 @@
 UrT Map development repository
 =====
-Source assets of community developed maps are stored here for anyone to build on or with.
+Source assets of community developed maps are stored here for anyone to build on or with. This is a live developers' environment. We keep relevant content in the repo that is beneficial to mappers, amateur and experienced alike.
 
 *FAQ #1*: Isn't the repo going to get huge, by storing all those maps?  
 A: NO. Map packages (pk3) are hosted elsewhere, with a specified download location described in the map's readme document. Map assets in development are committed to the mapdev repo.
