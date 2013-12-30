@@ -2,7 +2,7 @@ CASABLANCA
 =====
 
 Author: Johnnyenglish  
-PK3 Assets: http://urt.li/dlmap.php?fn=ut4_casablanca.pk3
+PK3 Assets: http://downloads.urban-zone.org/maps/q3ut4/ut4_casablanca.pk3
 
 Description
 -----
