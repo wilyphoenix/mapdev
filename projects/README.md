@@ -16,6 +16,26 @@ There is structure and order in this depo. Everyone else is counting on you to m
 
 It would be advisable to become acquainted with the [CMM community](http://www.custommapmakers.org/). They're very hospitable, and are supportive to this repo.
 
+Starting a project
+-----
+A map project in the repo begins with the following assets:  
+
+    1. PROJECT README: [yourmap] / README.md
+    2. MAP README:     [yourmap] / ut4_[yourmap]_README.txt
+    3. MAP SOURCE:     [yourmap] / maps / ut4_[yourmap].map
+    4. PREVIEW IMAGE:  [yourmap] / [yourmap]_preview.jpg
+
+The project readme is a markdown-formatted file that first appears in the project folder under the assets, like this one. It includes the projects' immediate need-to-know information.
+
+The map readme consists of a readme file that was or will be included with the release pk3. This does not have to be complete at this time if the map pk3 has not released.
+
+The map source is the .map file in the projects' current development state.
+
+The preview image is a simple screenshot of the map, with the following attributes:  
+ - 800x500, or 800px width and height of the original aspect ratio of the screenshot
+ - jpeg format
+ - ~100k
+
 Structure
 -----
 Maps themselves are considered projects. Thus, no prefix will be used, such as "ut4_". The structure is identical to a standard q3ut4 directory, with additional resource and asset directories as required.
