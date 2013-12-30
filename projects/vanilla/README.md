@@ -1,8 +1,8 @@
 VANILLA
 =====
 
+Author: wily
 PK3 Assets: http://gamedev.digitalamusement.com/maps/dev/ut4_vanilla.pk3  
-Original Author: wily
 
 Description
 -----
