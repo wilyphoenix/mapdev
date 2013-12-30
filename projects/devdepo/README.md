@@ -13,3 +13,8 @@ All models for this map should be located in [q3ut4/models](../../q3ut4/models).
 The models themselves could be copied locally into a pk3 archive and placed in your q3ut4 folder for quick usage (which you'd then remove when done).
 
 Work on this warehouse map is set to begin soon. The preview image is 0 bytes as a placeholder. Progress updates are at [maps/readme.txt](maps/readme.txt).
+
+Naming
+-----
+Q. What's up with the lack of a ut4_ prefix for the .map?  
+A. This is a special development map that is designed to be without gameplay. For simplicities sake for the mapper, calling "/devmap devdepo" is intuitive for the purpose.
