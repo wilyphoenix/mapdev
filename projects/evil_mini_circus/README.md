@@ -1,7 +1,7 @@
-EVIL_MINI_CIRCUS
+EVIL MINI CIRCUS
 =====
 
-Author: Johnnyenglish
+Author: Johnnyenglish  
 PK3 Assets: http://downloads.urban-zone.org/maps/q3ut4/ut4_evil_mini_circus.pk3
 
 Description
