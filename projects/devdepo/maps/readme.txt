@@ -1,0 +1,1 @@
+The base of this map is starting from vanilla. Updates to map progress will be posted in this readme.
