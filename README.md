@@ -21,9 +21,18 @@ If you aren't familiar with the process of git, I wrote a file [HOWTO.md](HOWTO.
 
 The browser environment at GitHub is the simplest way to make quick updates. However, local access via git from your system is required to add/change/update/delete any assets within the repo.
 
-### Content
-Be sure to check out the [tools](tools) section. I've recently added a carefully designed 2048px levelshot template to [q3ut4](q3ut4) that allows for very high definition levelshot images. The new [vanilla](maps/vanilla) map is a tech demo map for testing stuff. I'll be adding more goodies over time.  
+### Sections
+#### projects/
+Development on maps happen here. Certain standards are enforced to ensure a sane community developers environment, for example, co-locating .pk3's at an externally hosted site. This way, redundant map assets are not bulking up the repo. Having systems of order in this environment will reduce many issues in the long-run.
 
-Contributors are welcome.  
+The new [vanilla](projects/vanilla) map is a tech demo map for testing stuff like lighting, sizes, and placement of objects.
+
+#### q3ut4/
+These are assets that are ambiguous to any map project. For example, I've added a carefully designed 2048px levelshot template to [q3ut4/env](q3ut4/env) that allows for very high definition levelshot images.  
+
+#### tools/
+Making maps are easier when tasks can be automated. The tools here are mostly scripts that are meant to give mappers an edge in development.
+
+More, new content is on the way. Contributors are welcome and encouraged to join. The idea of community developed maps holds great potential - so don't hesistate to jump in!  
 
 -wily
