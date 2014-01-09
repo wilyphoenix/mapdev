@@ -21,8 +21,8 @@ textures/devdepo/vanilla_sky
 
 // final lighting
 	q3map_sunExt .96 .96 1 1500 45 60 1 16
-	q3map_skylight 400 5
 	q3map_lightmapFilterRadius 0 6
+	q3map_skylight 400 5
 
 }
 
