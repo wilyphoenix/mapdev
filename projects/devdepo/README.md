@@ -1,6 +1,7 @@
 The Development Depo
 =====
 Author: wily
+Higher resolution preview image: http://i.imgur.com/DTkiNG6.jpg
 
 A model warehouse for mappers
 -----
