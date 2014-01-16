@@ -122,9 +122,9 @@ textures/ut4_yacht/gridbase-purple
 }
 
 
-textures/ut4_yacht/gridbase-teal
+textures/ut4_yacht/gridbase-cyan
 {
-	qer_editorimage textures/ut4_yacht/editor/gridbase-teal.tga
+	qer_editorimage textures/ut4_yacht/editor/gridbase-cyan.tga
 
 	{
 		map textures/ut4_yacht/gridbase.tga
@@ -144,6 +144,119 @@ textures/ut4_yacht/gridbase-yellow
 	{
 		map textures/ut4_yacht/gridbase.tga
 		rgbgen const ( 1 1 0 )
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-orange
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-orange.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-orange.tga
+		rgbgen const ( 1 .5 0 )
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_red
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_red.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_red.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_green
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_green.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_green.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_blue
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_blue.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_blue.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_purple
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_purple.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_purple.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_cyan
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_cyan.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_cyan.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_yellow
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_yellow.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_yellow.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
+}
+
+
+textures/ut4_yacht/gridbase-bright_orange
+{
+	qer_editorimage textures/ut4_yacht/editor/gridbase-bright_orange.tga
+
+	{
+		map textures/ut4_yacht/editor/gridbase-bright_orange.tga
 	}
 	{
 		map $lightmap
