@@ -62,6 +62,46 @@ textures/ut4_yacht/gridbase
 }
 
 
+textures/ut4_yacht/gridbase_alpha
+{
+	qer_trans 0.30
+	qer_editorimage textures/ut4_yacht/gridbase_alpha.tga
+
+	surfaceparm alphashadow
+	surfaceparm detail
+	surfaceparm trans
+	surfaceparm noimpact
+	surfaceparm playerclip
+	surfaceparm nolightmap
+
+	cull none
+
+	{
+		map textures/ut4_yacht/gridbase_alpha.tga
+		blendfunc blend
+		depthWrite
+		rgbGen identity
+	}
+}
+
+
+textures/ut4_yacht/gridbase_dark
+{
+	qer_editorimage textures/ut4_yacht/gridbase_alpha.tga
+
+	{
+		map textures/ut4_yacht/gridbase_alpha.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap
+		rgbGen identity
+		blendFunc GL_DST_COLOR GL_ZERO
+	}
+
+}
+
+
 textures/ut4_yacht/gridbase-red
 {
 	qer_editorimage textures/ut4_yacht/editor/gridbase-red.tga
