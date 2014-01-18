@@ -142,8 +142,8 @@ $urtexe = "Quake3-UrT.exe";      		# name of the UrT exe file to make sure $path
 $q3ut4 =  "q3ut4";                   		# game assets and resources folder
 
 # SECOND: Specify your old and new map:
-$old_map = "ut4_mapdevwarehouse";		# Copy from old_map...
-$new_map = "devdepo";	# and create new_map. Specify same name as old_map when packaging.
+$old_map = "ut4_yacht";		# Copy from old_map...
+$new_map = "ut4_cmmcontest_a1";	# and create new_map. Specify same name as old_map when packaging.
 
 
 # THIRD: This is optional.
