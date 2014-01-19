@@ -1,13 +1,13 @@
 textures/ut4_cmmcontest_a1/skybox
 {
-	qer_editorimage env/ut4_cmmcontest_a1/yacht_up.jpg
+	qer_editorimage env/ut4_cmmcontest_a1/genericblue_up.jpg
 
 	surfaceparm noimpact
 	surfaceparm nomarks
 	surfaceparm nolightmap
 	surfaceparm sky
 
-	skyparms env/ut4_cmmcontest_a1/generic - -
+	skyparms env/ut4_cmmcontest_a1/genericblue - -
 
 	q3map_sunExt .96 .96 1 1500 30 80 1 16
 	q3map_lightmapFilterRadius 0 6
