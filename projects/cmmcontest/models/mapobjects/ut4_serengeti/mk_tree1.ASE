@@ -1,5 +1,5 @@
 *3DSMAX_ASCIIEXPORT	200
-*COMMENT "AsciiExport Version  2,00 - Sun Jan 19 15:55:57 2014"
+*COMMENT "AsciiExport Version  2,00 - Sun Jan 19 20:36:59 2014"
 *SCENE {
 	*SCENE_FILENAME "mk_tree1.max"
 	*SCENE_FIRSTFRAME 0
@@ -27,11 +27,11 @@
 		*MATERIAL_FALLOFF In
 		*MATERIAL_XP_TYPE Filter
 		*MAP_DIFFUSE {
-			*MAP_NAME "Map #2"
+			*MAP_NAME "Map #0"
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "E:\Program Files (x86)\UrbanTerror42Mapping\q3ut4\models\mapobjects\ut4_serengeti\mk_tree1.tga"
+			*BITMAP "q3ut4\models\mapobjects\ut4_serengeti\mk_tree1.jpg"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000
