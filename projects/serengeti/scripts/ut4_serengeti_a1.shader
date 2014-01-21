@@ -304,4 +304,25 @@ textures/ut4_serengeti_a1/gridbase-bright_orange
 	}
 }
 
+// John added for the grass models, feel free to change and add some deform
+
+models/mapobjects/ut4_serengeti/grass
+{
+	qer_editorimage models/mapobjects/ut4_serengeti/grass.tga
+	surfaceparm alphashadow
+	nopicmip
+	cull none
+	q3map_forcemeta
+	{
+		map models/mapobjects/ut4_serengeti/grass.tga
+		blendFunc GL_ONE GL_ZERO
+		alphaFunc GE128
+		depthWrite
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		depthFunc equal
+	}
+}
 
