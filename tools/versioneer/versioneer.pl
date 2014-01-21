@@ -35,7 +35,8 @@
 ##             that it copies into a package directory for you to verify, Zip, and rename to .pk3 yourself.
 ##          9. You will need to recompile your .bsp to match resources in your new map.
 ##
-## Version: v1.8 - 12262013.0 - Changed strings for 4.2. Updated some error checking for paths.
+## Version: v1.8.1 - 01202014.0 - Added "image" suffix to copyfile routine.
+##          v1.8 - 12262013.0 - Changed strings for 4.2. Updated some error checking for paths.
 ##          v1.7.1 - 12162013.0 - Uploaded to GitHub. Modifying some documents. Limited line width to no longer than 132 chars.
 ##          v1.7 - 12052013.0 - Adding model name output. Still can't copy models (yet).
 ##          v1.6 - 11262013.0 - Changed map1/map2 variables to better describe old_map/new_map. Updated docs.
@@ -142,8 +143,8 @@ $urtexe = "Quake3-UrT.exe";      		# name of the UrT exe file to make sure $path
 $q3ut4 =  "q3ut4";                   		# game assets and resources folder
 
 # SECOND: Specify your old and new map:
-$old_map = "ut4_yacht";		# Copy from old_map...
-$new_map = "ut4_cmmcontest_a1";	# and create new_map. Specify same name as old_map when packaging.
+$old_map = "ut4_cmmcontest_a1";		# Copy from old_map...
+$new_map = "ut4_serengeti_a1";		# and create new_map. Specify same name as old_map when packaging.
 
 
 # THIRD: This is optional.
@@ -261,7 +262,8 @@ $clone_models = "no";
 #                                    find all sorts of $new_map in there like "ut4_newmaprocks". Make sure $old_map and $new_map
 #                                    are EXACTLY what you want to find and replace if you think there is a conflict!
 
-# copyfile ([dir],[file_suffix]) - copies old mapname file to new mapname file [primarily for minimap, levelshot]
+# copyfile ([dir],[file_suffix]) - copies old mapname file to new mapname file [primarily for minimap, levelshot].
+#                                  Specifying "image" as the suffix indicates an image extension of either .tga or .jpg
 
 # copydir ([dir],[leaf]) - copies old mapname folder in a dir to new mapname in the same folder, and leaf folders
 #                          under that dir if specified [primarily for textures/, sound/]
@@ -413,7 +415,7 @@ sub primary {
     &copysame("scripts/shaderlist.txt","add");  # Inject $new_map into shaderlist.txt
   }
 
-  &copyfile("levelshots/",".tga");  # Looks for ut4_yourmap.tga, turns into ut4_newmap.tga
+  &copyfile("levelshots/","image");  # Looks for ut4_yourmap.tga (or .jpg), turns into ut4_newmap.tga (or .jpg)
 
   &copydir("sound/","");
 
@@ -561,6 +563,17 @@ sub copyfile {
   my ($dir,$suf) = @_;
 
   $dir .= "/" if $dir !~ /\/$/;  # add a / suffix if not specified
+
+## Specifying "image" suffix indicates an image extension of either .tga or .jpg
+  if ($suf eq "image") {
+    if (-e "$path$dir$old_map.tga") {
+      $suf = ".tga";
+    } elsif (-e "$path$dir$old_map.jpg") {
+      $suf = ".jpg";
+    } else {
+      $suf = ".unknown_ext";
+    }
+  }
 
   &op("copyfile $dir$new_map$suf");
 
